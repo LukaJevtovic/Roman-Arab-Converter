@@ -8,20 +8,24 @@ number = 0 #this is the variable that will become the converted number
 #loop which converts a list of Roman strings into a list of Arab numbers
 for i in range(len(ROMAN)):
     
-    if ROMAN[i] == 'I':
+    if ROMAN[i] == 'I' or ROMAN[i] == 'i':
         ARAB.append(1)
-    elif ROMAN[i] == 'V':
+    elif ROMAN[i] == 'V' or ROMAN[i] == 'v':
         ARAB.append(5)
-    elif ROMAN[i] == 'X':
+    elif ROMAN[i] == 'X' or ROMAN[i] == 'x':
         ARAB.append(10)
-    elif ROMAN[i] == 'L':
+    elif ROMAN[i] == 'L' or ROMAN[i] == 'l':
         ARAB.append(50)
-    elif ROMAN[i] == 'C':
+    elif ROMAN[i] == 'C' or ROMAN[i] == 'c':
         ARAB.append(100)
-    elif ROMAN[i] == 'D':
+    elif ROMAN[i] == 'D' or ROMAN[i] == 'd' :
         ARAB.append(500)
-    elif ROMAN[i] == 'M':
+    elif ROMAN[i] == 'M' or ROMAN[i] == 'm':
         ARAB.append(1000)
+    else:
+        print('Your input is incorrect. Please try again.')
+        raise SystemExit
+
 
 
 
